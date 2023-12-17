@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micheal Website.com</title>
+    <link rel="shortcut icon" href="oper.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="bodd">
+    <h1 class="top" onclick="change()" id="dfe">
+        javascript buttons
+        click me
+    </h1>
+    <p id="demo"></p>
+    <button onclick="deleteme()" class="def" id="def">Click me to delete text</button>
+    <div id="top-nav">
+        <H1 id="h1p">Prime bar And resturant</H1>
+        <nav>
+            <button onclick="dark()">dark</button>
+            <button onclick="light()">light</button>
+        </nav>
+        <script>
+            bodd = document.getElementById("bodd");
+            h1p = document.getElementById("h1p");
+            dfe = document.getElementById("dfe");
+            demo = document.getElementById("demo");
+
+            function dark() {
+                bodd.style.background = "black";
+                h1p.style.color = "white";
+                dfe.style.color = "white";
+                demo.style.color = "white";
+            }
+            function light() {
+                bodd.style.background = "white";
+                h1p.style.color = "black";
+                dfe.style.color = "black";
+                demo.style.color = "black";
+            }
+            function  change() {
+                document.getElementById("demo").innerHTML = "Javascript Buttons so fun but Trifficult";
+            }
+            function deleteme() {
+                demo.style.display ="none"
+            }
+        </script>
+    </div>
+</body>
+</html>
